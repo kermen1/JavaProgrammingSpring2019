@@ -15,7 +15,8 @@ public class IfElseWithScanner {
 		int yourScorePercentage = scan.nextInt();
 		
 		
-		if(grade == 'A') {
+		char grade = 0;
+		if(grade  == 'A') {
 			System.out.println("Excellent Job! Keep it up!");
 		}else {
 			System.out.println("Your grade "+grade+" is not good enough.");

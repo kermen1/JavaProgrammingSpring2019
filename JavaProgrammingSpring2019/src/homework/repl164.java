@@ -6,8 +6,9 @@ public class repl164 {
 		at3("Kermen", "loo");
 		wordCount("ggdyg gyfgd hfuh");
 		biggerS("kermen","aleksandrina");
+		System.out.println(simpleRoomBook1(true,5, 2, 2018));
 	}
-	public boolean simpleRoomBook(boolean isAvailable,int month, int day, int year)
+	public static boolean simpleRoomBook(boolean isAvailable,int month, int day, int year)
 	  {
 	    if(isAvailable==true && month>=1 || month<=12 && year==2018){
 	     
@@ -19,15 +20,14 @@ public class repl164 {
 	    	return false;
 	    
 	    
-	  }public boolean simpleRoomBook1(boolean isAvailable,int month, int day, int year) {
-	if(isAvailable == true && year==2018 && month>=1 || month<=12 ){
-	      if(month==7 && day>=1 || day<=7){
-	          return false;
-	        }
-	        return true;
-	      }
-	      
-	      return false;
+	  }public static boolean simpleRoomBook1(boolean isAvailable,int month, int day, int year) {
+		  if(isAvailable== false){
+			     return false;
+			   }else {
+				   return true;
+			   }
+		  
+			  
 }
 	  public static String limit(String text, int maxLength)
 	  {
